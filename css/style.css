@@ -76,7 +76,7 @@ header{
     
 
 }
-.b-content h1{
+#banner .b-content h1{
     font-family: 'Chivo', sans-serif;
     font-size: 80px;
     font-weight: 900;
