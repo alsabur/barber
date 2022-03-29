@@ -24,6 +24,13 @@ header{
     background-color: #150303;
 }
 
+.navbar{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
 .nav-link{
     font-size: 14px;
     color: white !important;
@@ -91,6 +98,11 @@ header{
     color: #fff;
     margin-bottom: 60px;
 
+
+}
+
+.b-flex p{
+    display: block;
 
 }
 
@@ -411,9 +423,226 @@ header{
     height: 0;
     border-radius: 15px;
     z-index: -1;
+    transition: 0.6s;
 }
 
 .sc-item:hover::before{
     height: 100%;
+    transition: 0.6s;
+}
+
+/* img slider css */
+
+#img-slider{
+    width: 100%;
+}
+
+#img-slider .owl-item{
+    margin-right: 0  !important;
+}
+
+#img-slider .owl-nav{
+    display: none;
+}
+
+#img-slider .owl-dots{
+    display: none;
+}
+
+#img-slider .item{
+    position: relative;
+}
+
+#img-slider .item::before{
+
+    content: '';
+    position: absolute;
+    background-color: rgba(251, 0, 0, 0.137);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+    
+
+
+}
+
+#img-slider .item:hover::before{
+    opacity: 1;
+
+}
+
+/* testimonial section css */
+
+#testimonial{
+    width: 100%;
+    padding:100px 0 ;
+}
+
+.t-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.t-title h3{
+    font-family: "Chivo",sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 12px;
+
+    
+}
+
+.r-cap p{
+    color: #150303;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    font-weight: 400; 
+    font-family: "Open Sans",sans-serif;
+
+}
+
+.r-cap .rating{
+    margin-bottom: 18px;
+    display: block;
+} 
+
+.r-cap .rating i{
+   color: #fb0000;
+}
+
+
+.r-img p{
+    margin-left: 16px;
+}
+
+.t-review row{
+    border-top: 1px solid black;
+    
+}
+
+.c-border{
+    border:1px solid rgba(103,94,94,.2);
+}
+
+.t-item{
+    padding: 32px;
+}
+
+.c-border:first-child{
+    border-left: none!important;
+    border-right: none!important;
+}
+
+.c-border:last-child{
+    border-left: none!important;
+    border-right: none!important;
+}
+
+/* footer section css */
+footer{
+    width: 100%;
+    padding: 100px 0;
+    background-color: #150303;
+
+}
+
+.footer-1 i{
+    color: #FB0000;
+    font-size: 20px;
+    margin-bottom: 25px;
+
+}
+
+.footer-1 h5{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer-1 p{
+    color: #928888;
+    font-weight: 400;
+    font-size: 15px;
+    
+}
+
+.footer-1 a{
+    color: #928888;
+    font-weight: 400;
+    font-size: 15px;
+    text-decoration: underline transparent;
+  }
+
+.m-footer{
+    text-align: center;
+}
+
+.m-footer p{
+    font-family: "Open Sans",sans-serif;
+    color: #675e5e;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: normal;
+    line-height: 1.6;
+}
+
+.m-footer a i{
+    color: #fff;
+    background: rgba(255,255,255,.06);
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    margin-top: 30px;
     transition: 0.5s;
 }
+
+.end{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.m-footer a i:hover{
+    background-color: #FB0000;
+    transition: 0.5s;
+    transform: rotateY(180deg);
+}
+
+.m-footer img{
+    margin-bottom: 35px;
+}
+
+/* copyright section css */
+
+.copyright{
+    background-color: #150303;
+    text-align: center;
+    
+}
+
+.copyright p{
+    color: #928888;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+    font-family: "Open Sans",sans-serif;
+    margin-bottom: 0 !important;
+    padding-bottom:20px ;
+}
+
