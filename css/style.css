@@ -122,7 +122,7 @@ header{
     line-height: 1;
     line-height: 0;
     cursor: pointer;
-    -moz-user-select: none;
+    
     transition: color .4s linear;
     position: relative;
     z-index: 1;
@@ -162,9 +162,11 @@ header{
     color: #FB0000 !important;
 }
 
-.banner-img{
-    float: right;
-}
+
+/* removed float right */
+/* .banner-img{
+    
+} */
 
 
 
